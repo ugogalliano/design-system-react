@@ -1,6 +1,5 @@
 import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
-
 const config = {
   content: [
     "./pages/**/*.{ts,tsx}",
@@ -8,7 +7,7 @@ const config = {
     "./shared/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
-    "../../packages/ui/src/**/*.{ts,tsx}",
+    "../../packages/ui/src/components/**/*.{ts,tsx}",
   ],
   darkMode: ["class"],
   theme: {
@@ -145,6 +144,18 @@ const config = {
           700: "#B57900",
           800: "#8C5E00",
           900: "#6B4700",
+        },
+        info: {
+          50: "#E6F4FF",
+          100: "#B0DEFF",
+          200: "#8ACEFF",
+          300: "#54B8FF",
+          400: "#33AAFF",
+          500: "#0095FF",
+          600: "#0088E8",
+          700: "#006AB5",
+          800: "#00528C",
+          900: "#003F6B",
         },
 
         border: "hsl(var(--border))",

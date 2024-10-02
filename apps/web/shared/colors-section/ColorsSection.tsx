@@ -16,7 +16,7 @@ const ColorsSection = (props: ColorsSectionProps) => {
 
   return (
     <>
-      <h3 className="mt-4">{props.title}</h3>
+      <h4 className="mt-4 font-normal">{props.title}</h4>
       <div className="grid grid-cols-10  h-20">
         <Box value={50} rounded="left" className={`${colorVariants.get(50)}`} />
         {grade_section.map((item) => (
@@ -63,3 +63,9 @@ export const successVariants =
 
 export const dangerVariants =
   "bg-danger-50 bg-danger-100 bg-danger-200 bg-danger-300 bg-danger-400 bg-danger-500 bg-danger-600 bg-danger-700 bg-danger-800 bg-danger-900";
+
+export const warningVariants =
+  "bg-warning-50 bg-warning-100 bg-warning-200 bg-warning-300 bg-warning-400 bg-warning-500 bg-warning-600 bg-warning-700 bg-warning-800 bg-warning-900";
+
+export const infoariants =
+  "bg-info-50 bg-info-100 bg-info-200 bg-info-300 bg-info-400 bg-info-500 bg-info-600 bg-info-700 bg-info-800 bg-info-900";
