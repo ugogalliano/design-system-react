@@ -3,8 +3,15 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   :root {
-    --background: 0 0% 100%;
+    /** Tipography **/
+    --leading-h1: 3.625rem;
+
     --foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -37,7 +44,9 @@
   }
 
   .dark {
-    --background: 224 71% 4%;
+    /** Tipography **/
+    --leading-h1: 3.625rem;
+
     --foreground: 213 31% 91%;
 
     --muted: 223 47% 11%;
@@ -72,12 +81,32 @@
 
 @layer base {
   * {
-    @apply border-border;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
+
+  h1 {
+    @apply text-5xl  font-semibold;
+  }
+
+  h2 {
+    @apply text-4xl font-semibold;
+  }
+
+  h3 {
+    @apply text-3xl font-semibold;
+  }
+
+  h4 {
+    @apply text-2xl font-semibold;
+  }
+
+  h5 {
+    @apply text-xl font-semibold;
+  }
+
   body {
-    @apply bg-background text-foreground;
-    font-feature-settings:
-      "rlig" 1,
-      "calt" 1;
+    @apply bg-gray-200 text-foreground;
   }
 }

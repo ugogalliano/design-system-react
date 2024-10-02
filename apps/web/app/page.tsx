@@ -1,5 +1,11 @@
-import "./globals.css";
+import CardColors from "../components/card-colors/CardColors";
 
-export default function Home() {
-  return <div className={"bg-primary-800 h-full text-lg"}>Now Workkkk</div>;
-}
+const Home = () => {
+  return (
+    <>
+      <CardColors />
+    </>
+  );
+};
+
+export default Home;
