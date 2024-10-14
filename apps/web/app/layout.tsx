@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+
 import "@repo/ui/globals.css";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,7 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="w-screen h-screen ">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={"w-screen h-screen " + inter.className}
+    >
       <body className="w-full h-full">
         <main className="mx-auto max-w-[1200px] w-full h-full">{children}</main>
       </body>
